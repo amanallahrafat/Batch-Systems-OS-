@@ -43,7 +43,6 @@ public class BatchSystem {
 			if(next && !Ready.isEmpty())
 			{
 				p = Ready.poll();
-			//	if(p == null) continue; // WHY?
 				if (p.getCurrentState() == ProcessState.READY)
 					p.start();
 				else
